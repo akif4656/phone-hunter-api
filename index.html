@@ -11,7 +11,12 @@
     <header>
         <h1 class="t">HUnting phone</h1>
     </header>
-    <main>
+    <main class="mt-10">
+        <!-- search result -->
+        <section class="bg-blue-100 p-4 m-8 flex">
+            <input id="search" type="text" placeholder="search" class="input input-bordered w-full max-w-xs" />
+            <button onclick="handelSearch()" class="btn btn-accent ml-3">Search</button>
+        </section>
         <section>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                
