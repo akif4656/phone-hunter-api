@@ -9,12 +9,14 @@
 </head>
 <body>
     <header>
-        <h1 class="t">HUnting phone</h1>
+        <h1 class="">Hunting phone</h1>
+        <h2 class="">search: iphone,samsung,oppo</h2>
+
     </header>
     <main class="mt-10">
         <!-- search result -->
         <section class="bg-blue-100 p-4 m-8 flex">
-            <input id="search" type="text" placeholder="search" class="input input-bordered w-full max-w-xs" />
+            <input id="search" type="text" placeholder="search :iphone,samsung,oppo" class="input input-bordered w-full max-w-xs" />
             <button onclick="handelSearch()" class="btn btn-accent ml-3">Search</button>
         </section>
         <section>
@@ -24,11 +26,24 @@
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                
             </div>
-            <div id="show-all-container" class="hidden" >
+            <div id="show-all-container" class="hidden text-center" >
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg " >Show All</button>
             </div>
         </section>
-
+        <!-- show details -->
+         <!-- Open the modal using ID.showModal() method -->
+                <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+                    <div id="show_details_container">
+                    </div>
+                    <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                    </div>
+                  </div>
+                </dialog>
     </main>
     <footer>
 
